@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.grey {
+  color: #cccccc
+}
+
+.nostyle {
+  text-decoration: none;
+}
+
+.desc {
+  color: #7c795d; 
+  font-family: 'Trocchi', serif; 
+  font-size: 45px; 
+  font-weight: normal; 
+  line-height: 48px; 
+  margin: 0;
+}
+
+.title {
+  color: #7c795d; 
+  font-family: 'Trocchi', serif; 
+  font-size: 40px; 
+  font-weight: normal;
+}
