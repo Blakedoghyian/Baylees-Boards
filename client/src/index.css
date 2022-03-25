@@ -7,7 +7,7 @@
 
 }
 body {
-    padding-top: 65px;
+    padding-top: 85px;
     background-color: var(--primary-color-Isabelline);
 }
 
@@ -64,6 +64,7 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 .ml-auto {
