@@ -1,5 +1,53 @@
-img {
-    width: 30%;
+:root {
+    --primary-color-Isabelline: #edede9;
+    --secondary-color-desert-sand: #d5bdaf;
+    --ternary-color-pale-silver: #d6ccc2;
+    --color-linen: #f5ebe0;
+    --color-champagne: #e3d5ca;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans" sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color-Isabelline);
+}
+
+/*Start Collin's Classes*/
+/* product List*/
+.productsContainer {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    justify-content: center;
+    grid-gap: 2rem;
+    margin: 1rem;
+}
+
+.productCard {
+    box-shadow: 0px 2px 8px 0px var(--ternary-color-pale-silver);
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    background-color: var(--secondary-color-desert-sand);
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.productCard:hover {
+    box-shadow: 0px 4px 16px 0px var(--ternary-color-pale-silver);
+}
+
+.productCard img {
+    position: relative;
+    height: 25vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .contact {
@@ -72,3 +120,52 @@ button:hover {
     background-color: #D5BDAF;
     color: #5e5c5b;
 }
+.productCard a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+.productCard span {
+    font-size: 1.5rem;
+    color:black;
+    
+}
+
+.productCard button {
+    background-color: var(--primary-color-Isabelline);
+    width: 80%;
+    margin: .25rem 0 .75rem 2.2rem;
+
+}
+@media screen and (min-width:500px){
+    .productsContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width:760px){
+    .productsContainer{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/*Category filtering classes*/
+.btnContainer {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    justify-content: center;
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+.catBtns {
+    box-shadow: 0px 2px 8px 0px var(--ternary-color-pale-silver);
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    background-color: var(--secondary-color-desert-sand);
+    overflow: hidden;
+    margin: .25rem;
+}
+
+
+/*End Collin's Classes*/
