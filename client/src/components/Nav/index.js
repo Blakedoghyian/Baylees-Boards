@@ -1,77 +1,70 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import bayleeslogo from "../../assets/bayleeslogo.png";
 
-function Nav() {
+function Navigation() {
 
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
+        <div className="">
         <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/orderHistory">
+          <li className="mx-1 navbar">
+            <Link className="links" to="/boards">
               Boards
             </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/orderHistory">
+            <Link className="links" to="/orderHistory">
               Order History
             </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/contact">
+            <Link className="links" to="/contact">
               Contact
             </Link>
-          </li>
-          <li className="mx-1">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
+            <a className="links" href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
           </li>
         </ul>
+        </div>
       );
     } else {
       return (
+        <div className="">
         <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/boards">
+          <li className="mx-1 navbar">
+            <Link className="links" to="/boards">
               Boards
             </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/signup">
+            <Link className="links" to="/signup">
               Signup
             </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/login">
+            <Link className="links" to="/login">
               Login
             </Link>
-            <li className="mx-1">
-              <Link to="/contact">
+              <Link className="links" to="/contact">
                 Contact
               </Link>
             </li>
-          </li>
         </ul>
+        </div>
       );
     }
   }
 
   return (
-    <header className="flex-row px-1">
+    <header className="flex-row navContainer sticky">
       <h1>
-        <Link to="/">
+        <Link className="nostyle fonts" to="/">
           Baylee's Boards
         </Link>
       </h1>
 
-      <nav>
+      <nav className="ml-auto">
         {showNavigation()}
       </nav>
     </header>
   );
 }
 
-export default Nav;
+export default Navigation;
