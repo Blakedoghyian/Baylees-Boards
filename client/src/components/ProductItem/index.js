@@ -40,7 +40,7 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1">
+    <div className="card productCard">
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
@@ -51,7 +51,7 @@ function ProductItem(item) {
       <div>
         <span>${price}</span>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+      <button className="btn btn-lg" type="button" onClick={addToCart}>Add to cart</button>
     </div>
   );
 }
