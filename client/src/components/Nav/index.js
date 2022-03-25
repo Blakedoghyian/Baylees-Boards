@@ -35,6 +35,11 @@ function Nav() {
             </Link>
           </li>
           <li className="mx-1">
+            <Link to="/contact">
+              Contact
+            </Link>
+          </li>
+          <li className="mx-1">
             <Link to="/signup">
               Signup
             </Link>

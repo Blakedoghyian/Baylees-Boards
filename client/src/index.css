@@ -2,3 +2,73 @@ img {
     width: 30%;
 }
 
+.contact {
+    height: 100vh;
+    position: relative;
+    color: #D5BDAF;
+}
+
+.contact-left {
+    padding: 30px 60px;
+}
+
+.contact-title {
+    width: 70%;
+    font-size: 40px;
+    border-bottom: 5px solid #F5EBE0;
+}
+
+.contact-buttons {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.contact-info-item a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 50px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 40%;
+    height: 40px;
+    border: none;
+    margin: 20px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+    border-bottom: 2px solid #F5EBE0;
+}
+
+textarea {
+    width: 70%;
+    margin: 20px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+    border: 2px solid #F5EBE0;
+}
+
+button {
+    width: 100px;
+    border: none;
+    padding: 20px;
+    background-color: #F5EBE0;
+    color: #5e5c5b;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+button:hover {
+    background-color: #D5BDAF;
+    color: #5e5c5b;
+}
