@@ -6,19 +6,15 @@ import background from '../assets/home-page.gif';
 
 const Home = () => {
   return (
-    <div
-      class="jumbotron jumbotron-fluid"
-      style={{
-        backgroundImage: "url(" + background + ")",
-        backgroundSize: "cover",
-        height: "100vh"
-      }}
-    >
-      <div class="container">
-        <h1 class="">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <div class="container-fluid">
+      <div class="jumbotron text-white jumbotron-image shadow d-flex align-items-center" style={{backgroundImage: "url(" + background + ")"}}>
+        <div class="container text-center">
+          <h1 class="mb-4">charcuterie (pronounced "shahr-ku-tuh-ree"):</h1>
+          <h4 class="mb-4">the art of preparing and assembling cured meats and meat products.</h4>
+        </div>
       </div>
     </div>
+    
   );
 };
 

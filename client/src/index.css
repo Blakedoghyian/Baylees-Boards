@@ -91,6 +91,7 @@ ul {
     padding: 0;
 }
 
+<<<<<<< HEAD
 .navbtn {
     display: none;
     position: absolute;
@@ -122,6 +123,106 @@ ul {
         display: block;
     }
 }
+=======
+/* Start Jessica's Classes */
+
+.jumbotron-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:90vh;
+}
+
+.container {
+    background-color: var(--secondary-color-desert-sand);
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0px 2px 8px 0px var(--ternary-color-pale-silver);
+    opacity: 0.8;
+    color: black;
+}
+
+.contact {
+    height: 100vh;
+    position: relative;
+}
+
+.contact-left {
+    padding: 30px 60px;
+}
+
+.contact-title {
+    width: 70%;
+    font-size: 40px;
+    border-bottom: 5px solid var(--secondary-color-desert-sand);
+    border-radius: 0.2rem;
+}
+
+.contact-buttons {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.contact-info-item a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 50px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 30%;
+    height: 40px;
+    border: none;
+    margin: 20px 0px;
+    font-size: 14px;
+    padding-left: 15px;
+    border-bottom: 2px solid var(--color-linen);
+    box-shadow: 0px 2px 8px 0px var(--ternary-color-pale-silver);
+    border-radius: 1rem;
+}
+
+textarea {
+    width: 70%;
+    margin: 20px 0px;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-top: 10px;
+    border: 2px solid var(--color-linen);
+    box-shadow: 0px 2px 8px 0px var(--ternary-color-pale-silver);
+    border-radius: 1rem;
+}
+
+button {
+    width: 100px;
+    border: none;
+    padding: 20px;
+    background-color: var(--secondary-color-desert-sand);
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 20px 0px;
+    box-shadow: 0px 2px 8px 0px var(--ternary-color-pale-silver);
+    border-radius: 1rem;
+}
+
+button:hover {
+    background-color: var(--color-linen);
+    color: black;
+}
+
+/* End Jessica's Classes*/
+
+>>>>>>> a43aee82969529bff074bc716b8e198202b3173e
 
 /*Start Collin's Classes*/
 /* product List*/
@@ -155,76 +256,6 @@ ul {
     background-position: center;
 }
 
-.contact {
-    height: 100vh;
-    position: relative;
-    color: #D5BDAF;
-}
-
-.contact-left {
-    padding: 30px 60px;
-}
-
-.contact-title {
-    width: 70%;
-    font-size: 40px;
-    border-bottom: 5px solid #F5EBE0;
-}
-
-.contact-buttons {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-}
-
-.contact-info-item a {
-    list-style: none;
-    text-decoration: none;
-    margin: 0 50px;
-}
-
-form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    width: 40%;
-    height: 40px;
-    border: none;
-    margin: 20px 0px;
-    font-size: 14px;
-    padding-left: 10px;
-    border-bottom: 2px solid #F5EBE0;
-}
-
-textarea {
-    width: 70%;
-    margin: 20px 0px;
-    font-size: 14px;
-    padding-left: 10px;
-    border: 2px solid #F5EBE0;
-}
-
-button {
-    width: 100px;
-    border: none;
-    padding: 20px;
-    background-color: #F5EBE0;
-    color: #5e5c5b;
-    font-weight: 500;
-    cursor: pointer;
-    margin: 20px 0px;
-}
-
-button:hover {
-    background-color: #D5BDAF;
-    color: #5e5c5b;
-}
 .productCard a {
     font-size: 1.5rem;
     text-decoration: none;
