@@ -91,7 +91,6 @@ ul {
     padding: 0;
 }
 
-<<<<<<< HEAD
 .navbtn {
     display: none;
     position: absolute;
@@ -123,7 +122,6 @@ ul {
         display: block;
     }
 }
-=======
 /* Start Jessica's Classes */
 
 .jumbotron-image {
@@ -132,7 +130,7 @@ ul {
     background-size: cover;
     height:90vh;
 }
-
+/*
 .container {
     background-color: var(--secondary-color-desert-sand);
     text-align: center;
@@ -141,7 +139,7 @@ ul {
     opacity: 0.8;
     color: black;
 }
-
+*/
 .contact {
     height: 100vh;
     position: relative;
@@ -201,7 +199,7 @@ textarea {
     box-shadow: 0px 2px 8px 0px var(--ternary-color-pale-silver);
     border-radius: 1rem;
 }
-
+/*
 button {
     width: 100px;
     border: none;
@@ -222,7 +220,6 @@ button:hover {
 
 /* End Jessica's Classes*/
 
->>>>>>> a43aee82969529bff074bc716b8e198202b3173e
 
 /*Start Collin's Classes*/
 /* product List*/
