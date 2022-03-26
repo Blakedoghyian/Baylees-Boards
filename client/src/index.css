@@ -95,7 +95,7 @@ ul {
     height:90vh;
 }
 
-.container {
+#home-text {
     background-color: var(--secondary-color-desert-sand);
     text-align: center;
     padding: 50px;
@@ -164,7 +164,7 @@ textarea {
     border-radius: 1rem;
 }
 
-button {
+.contact-button {
     width: 100px;
     border: none;
     padding: 20px;
@@ -177,7 +177,7 @@ button {
     border-radius: 1rem;
 }
 
-button:hover {
+.contact-button:hover {
     background-color: var(--color-linen);
     color: black;
 }
