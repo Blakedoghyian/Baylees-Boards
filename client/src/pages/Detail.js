@@ -88,7 +88,7 @@ function Detail() {
   return (
     <>
       {currentProduct ? (
-        <div className="container my-1">
+        <div className="container md">
           <Link to="/">← Back to Boards</Link>
 
           <h2>{currentProduct.name}</h2>
@@ -105,15 +105,17 @@ function Detail() {
               Remove from Cart
             </button> */}
           </p>
-
-          <img
+            <div className='detail-container '>
+          <img className='img-resize'
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
+          </div>
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
     <Cart />
+    
     </>
   );
 }

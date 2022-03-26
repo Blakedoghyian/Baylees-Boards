@@ -91,39 +91,6 @@ ul {
     padding: 0;
 }
 
-<<<<<<< HEAD
-.navbtn {
-    display: none;
-    position: absolute;
-    right: 5px;
-    top: 0px;
-    padding: 5px;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    background-color: rgb(250, 250, 250);
-}
-
-@media screen and (max-width: 500px){
-    .list {
-        flex-direction: column;
-        height: auto;
-    }
-    .items:nth-child(1){
-        border-top: 1px solid rgba(255, 255, 255, 0.555);
-        margin-top: 50px;
-    }
-    .items {
-        width: 100%;
-        border-top: 1px solid rgba(255, 255, 255, 0.555);
-        text-align: center;
-        margin-right: 0px;
-        padding: 20px 0;
-    }
-    .navbtn {
-        display: block;
-    }
-}
-=======
 /* Start Jessica's Classes */
 
 .jumbotron-image {
@@ -222,7 +189,6 @@ button:hover {
 
 /* End Jessica's Classes*/
 
->>>>>>> a43aee82969529bff074bc716b8e198202b3173e
 
 /*Start Collin's Classes*/
 /* product List*/
@@ -305,3 +271,22 @@ button:hover {
 
 
 /*End Collin's Classes*/
+
+
+.detail-container {
+    background-color: var(--secondary-color-desert-sand);
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.img-resize {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.card {
+    box-shadow: 0px 2px 8px 0px var(--ternary-color-pale-silver);
+    background-color: var(--secondary-color-desert-sand);
+}
