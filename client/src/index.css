@@ -91,7 +91,7 @@ ul {
     padding: 0;
 }
 
-.btn {
+.navbtn {
     display: none;
     position: absolute;
     right: 5px;
@@ -117,7 +117,7 @@ ul {
         margin-right: 0px;
         padding: 20px 0;
     }
-    .btn {
+    .navbtn {
         display: block;
     }
 }

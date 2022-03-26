@@ -32,21 +32,24 @@ function Navigation() {
       return (
         
         <ul className="flex-row">
-          <li className="mx-1 navbar">
-            <Link className="links" to="/boards">
+          {(toggleMenu || screenWidth > 500) && (
+          <li className="mx-1 navbar list">
+            <Link className="links items" to="/boards">
               Boards
             </Link>
-            <Link className="links" to="/orderHistory">
+            <Link className="links items" to="/orderHistory">
               Order History
             </Link>
-            <Link className="links" to="/contact">
+            <Link className="links items" to="/contact">
               Contact
             </Link>
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a className="links" href="/" onClick={() => Auth.logout()}>
+            <a className="links items" href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
           </li>
+          )}
+            <button onClick={toggleNav} className="navbtn">MENU</button>
         </ul>
         
       );
@@ -61,18 +64,18 @@ function Navigation() {
             <Link className="links items" to="/boards">
               Boards
             </Link>
-            <Link className="links" to="/signup">
+            <Link className="links items" to="/signup">
               Signup
             </Link>
-            <Link className="links" to="/login">
+            <Link className="links items" to="/login">
               Login
             </Link>
-              <Link className="links" to="/contact">
+              <Link className="links items" to="/contact">
                 Contact
               </Link>
             </li>
           )}
-            <button onClick={toggleNav} className="btn">MENU</button>
+            <button onClick={toggleNav} className="navbtn">MENU</button>
         </ul>
         
       );
