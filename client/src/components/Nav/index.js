@@ -1,53 +1,83 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 import bayleeslogo from "../../assets/bayleeslogo.png";
 
-function Navigation() {
 
+function Navigation() {
+  const [toggleMenu, setToggleMenu] = useState(false)
+
+  const toggleNav = () => {
+    setToggleMenu(!toggleMenu)
+  }
+
+  useEffect(() => {
+
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', changeWidth)
+
+    return () => {
+        window.removeEventListener('resize', changeWidth)
+    }
+
+  }, [])
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <div className="">
+        
         <ul className="flex-row">
-          <li className="mx-1 navbar">
-            <Link className="links" to="/boards">
+          {(toggleMenu || screenWidth > 500) && (
+          <li className="mx-1 navbar list">
+            <Link className="links items" to="/boards">
               Boards
             </Link>
-            <Link className="links" to="/orderHistory">
+            <Link className="links items" to="/orderHistory">
               Order History
             </Link>
-            <Link className="links" to="/contact">
+            <Link className="links items" to="/contact">
               Contact
             </Link>
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a className="links" href="/" onClick={() => Auth.logout()}>
+            <a className="links items" href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
           </li>
+          )}
+            <button onClick={toggleNav} className="navbtn">MENU</button>
         </ul>
-        </div>
+        
       );
     } else {
+
       return (
-        <div className="">
+
+        
         <ul className="flex-row">
-          <li className="mx-1 navbar">
-            <Link className="links" to="/boards">
+          {(toggleMenu || screenWidth > 500) && (
+          <li className="mx-1 navbar list">
+            <Link className="links items" to="/boards">
               Boards
             </Link>
-            <Link className="links" to="/signup">
+            <Link className="links items" to="/signup">
               Signup
             </Link>
-            <Link className="links" to="/login">
+            <Link className="links items" to="/login">
               Login
             </Link>
-              <Link className="links" to="/contact">
+              <Link className="links items" to="/contact">
                 Contact
               </Link>
             </li>
+          )}
+            <button onClick={toggleNav} className="navbtn">MENU</button>
         </ul>
-        </div>
+        
       );
     }
   }
