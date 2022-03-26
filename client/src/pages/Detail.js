@@ -91,7 +91,7 @@ function Detail() {
   return (
     <>
       {currentProduct ? (
-        <div className="container md">
+        <div id='home-text'>
           <Link to="/">← Back to Boards</Link>
 
           <h2>{currentProduct.name}</h2>
@@ -101,9 +101,9 @@ function Detail() {
           <p className='price-container'>
             <strong>Price:</strong>${currentProduct.price}{' '}
             <div>
-            <button onClick={addToCart}>Add to Cart</button>
+            <button className='detail-button' onClick={addToCart}>Add to Cart</button>
             <a href='/contact'>
-            <button> Custom Boards</button>
+            <button className='detail-button'> Custom Boards</button>
             </a>
             </div>
             {/* <button 

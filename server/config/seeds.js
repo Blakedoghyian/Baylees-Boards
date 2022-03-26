@@ -35,7 +35,7 @@ db.once('open', async () => {
       name: 'Sweet and Sour - Sm',
       category: categories[0]._id,
       description:
-        'This board hits both ends of the spectrum. Our Sweet and Sour charcuterie board will have your tastebuds jumping! Starting with  (𝘚𝘦𝘳𝘷𝘦𝘴 6-8)',
+        'This board hits both ends of the spectrum. Our Sweet and Sour charcuterie board will have your tastebuds jumping! This board contains Prosciutto, Pineapple, Honey to drizzle, lime for some zing. Along with assorted nuts, crackers and jams.  (𝘚𝘦𝘳𝘷𝘦𝘴 6-8)',
       image: 'small-meat-nuts.jpg',
       price: 40
     },
@@ -43,7 +43,7 @@ db.once('open', async () => {
       name: 'Honey Bee - Md',
       category: categories[1]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl. (𝘚𝘦𝘳𝘷𝘦𝘴 8-12)',
+        'The Honey Bee is a classic style board that comes with Crackers, Pepperjack cheese, Salami, assorted fruits, all accompanied with apple and cherry spreads. (𝘚𝘦𝘳𝘷𝘦𝘴 8-12)',
       image: 'medium-cracker-grapes.jpg',
       price: 60
     },
@@ -51,7 +51,7 @@ db.once('open', async () => {
       name: 'Taste the Rainbow - Md',
       category: categories[1]._id,
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum. (𝘚𝘦𝘳𝘷𝘦𝘴 8-12)',
+        'This board is plated with Crackers, Hummus, Baby Carrots, Cherry Tomatoes, brie cheese, Smoked gouda, and a mix of berries. (𝘚𝘦𝘳𝘷𝘦𝘴 8-12)',
       image: 'medium-fruits-veggies.jpg',
       price: 60
     },
@@ -59,7 +59,7 @@ db.once('open', async () => {
       name: 'Midnight Snack - Md',
       category: categories[1]._id,
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo. (𝘚𝘦𝘳𝘷𝘦𝘴 8-12)',
+        'This board doesnt even need a description! All things sweet - The Midnight Snack is plated with Chocoalte, Mixed Berries, Apples, and salted pretzels. Oh, and more chocolate! (𝘚𝘦𝘳𝘷𝘦𝘴 8-12)',
       image: 'medium-dessert.jpg',
       price: 70
     },
@@ -67,7 +67,7 @@ db.once('open', async () => {
       name: 'Paradise - Lg',
       category: categories[2]._id,
       description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien. (𝘚𝘦𝘳𝘷𝘦𝘴 12-16)',
+        'Calling all vegetarians! - This board comes comes with all of our fruits, crackers, and cheeses accompanied with 2 bowls of our chickpea hummus. (𝘚𝘦𝘳𝘷𝘦𝘴 12-16)',
       image: 'large-fruit-cheese.jpg',
       price: 100
     },
@@ -75,14 +75,14 @@ db.once('open', async () => {
       name: 'Full House - Lg',
       category: categories[2]._id,
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna. (𝘚𝘦𝘳𝘷𝘦𝘴 12-16)',
+        '(𝘖𝘶𝘳 𝘣𝘦𝘴𝘵 𝘴𝘦𝘭𝘭𝘦𝘳) This board comes with all of our crackers, fruits, and meats to satisfy the masses. The Full House is also accompanied with our 2 in-house apple and cherry fruit spreads along with 3 bowls of our chickpea hummus.(𝘚𝘦𝘳𝘷𝘦𝘴 12-16)',
       image: 'large-crackers.jpg',
       price: 120
     },
     {
       name: 'Red, White, and Blue - Lg',
       category: categories[2]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum. (𝘚𝘦𝘳𝘷𝘦𝘴 12-16)',
+      description: 'This board comes with all of our meats, crackers and cheeses accompanied by a colorful mixture of berries. This board also comes with 3 bowls of our hummus. (𝘚𝘦𝘳𝘷𝘦𝘴 12-16)',
       image: 'large-pita-hummus.jpg',
       price: 120
     },

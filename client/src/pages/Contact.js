@@ -36,9 +36,9 @@ const Contact = () => {
                         <form ref={formRef} onSubmit={handleSubmit}>
                             <input type="text" placeholder="your name" name="user_name" />
                             <input type="text" placeholder="subject" name="user_subject" />
-                            <input type="text" placeholder="your email" name="user_email" />
+                            <input type="text" placeholder="your email address" name="user_email" />
                             <textarea rows="5" placeholder="message" name="message"></textarea>
-                            <button>submit</button>
+                            <button class="contact-button">submit</button>
                             {done && " -- Thank you! --"}
                         </form>
                     </div>
