@@ -13,6 +13,8 @@ import { idbPromise } from "../utils/helpers";
 import { QUERY_PRODUCTS } from '../utils/queries';
 import spinner from '../assets/spinner.gif';
 import Cart from '../components/Cart';
+import Contact from './Contact';
+
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -23,6 +25,7 @@ function Detail() {
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
   const { products, cart } = state;
+
 
   const addToCart = () => {
     const itemInCart = cart.find((cartItem) => cartItem._id === id)
@@ -95,9 +98,14 @@ function Detail() {
 
           <p>{currentProduct.description}</p>
 
-          <p>
+          <p className='price-container'>
             <strong>Price:</strong>${currentProduct.price}{' '}
+            <div>
             <button onClick={addToCart}>Add to Cart</button>
+            <a href='/contact'>
+            <button> Custom Boards</button>
+            </a>
+            </div>
             {/* <button 
               disabled={!cart.find(p => p._id === currentProduct._id)} 
               onClick={removeFromCart}
@@ -105,7 +113,7 @@ function Detail() {
               Remove from Cart
             </button> */}
           </p>
-            <div className='detail-container '>
+            <div className='detail-container'>
           <img className='img-resize'
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
