@@ -47,6 +47,11 @@ ul {
     color:#B08968 ;
 }
 
+.btn:hover {
+    text-decoration: underline;
+    color:#B08968 ;
+}
+
 .links {
     padding: 12px;
     text-decoration: none;
@@ -86,6 +91,36 @@ ul {
     padding: 0;
 }
 
+.btn {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+@media screen and (max-width: 500px){
+    .list {
+        flex-direction: column;
+        height: auto;
+    }
+    .items:nth-child(1){
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        margin-top: 50px;
+    }
+    .items {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        text-align: center;
+        margin-right: 0px;
+        padding: 20px 0;
+    }
+    .btn {
+        display: block;
+    }
+}
 
 /*Start Collin's Classes*/
 /* product List*/

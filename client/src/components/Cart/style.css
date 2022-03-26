@@ -75,3 +75,11 @@
       margin: 0 auto;
     }
   }
+
+  input {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.13);
+  }
+
+  button {
+    border-radius: 25px;
+  }

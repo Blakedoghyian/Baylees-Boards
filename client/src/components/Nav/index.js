@@ -1,10 +1,32 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 import bayleeslogo from "../../assets/bayleeslogo.png";
 
-function Navigation() {
 
+function Navigation() {
+  const [toggleMenu, setToggleMenu] = useState(false)
+
+  const toggleNav = () => {
+    setToggleMenu(!toggleMenu)
+  }
+
+  useEffect(() => {
+
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', changeWidth)
+
+    return () => {
+        window.removeEventListener('resize', changeWidth)
+    }
+
+  }, [])
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
@@ -29,11 +51,14 @@ function Navigation() {
         
       );
     } else {
+
       return (
+
         
         <ul className="flex-row">
-          <li className="mx-1 navbar">
-            <Link className="links" to="/boards">
+          {(toggleMenu || screenWidth > 500) && (
+          <li className="mx-1 navbar list">
+            <Link className="links items" to="/boards">
               Boards
             </Link>
             <Link className="links" to="/signup">
@@ -46,6 +71,8 @@ function Navigation() {
                 Contact
               </Link>
             </li>
+          )}
+            <button onClick={toggleNav} className="btn">MENU</button>
         </ul>
         
       );
