@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { pluralize } from "../../utils/helpers"
 import { useStoreContext } from '../../utils/GlobalState';
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from '../../utils/actions';
 import { idbPromise } from "../../utils/helpers";
@@ -10,8 +9,7 @@ function ProductItem(item) {
     image,
     name,
     _id,
-    price,
-    quantity
+    price
   } = item;
 
   const [state, dispatch] = useStoreContext();
@@ -39,6 +37,22 @@ function ProductItem(item) {
     }
   }
 
+  function RegularItem(props) {
+    return <button className="btn btn-lg" type="button" onClick={addToCart}>Add to cart</button>;
+  }
+  
+  function CustomItem(props) {
+    return <Link to={'/contact'}><button className="btn btn-lg" type="button">Customize a Board</button></Link>
+  }
+
+  function RenderButton(props) {
+    const hasPrice = item.price;
+    if (hasPrice > 0) {
+      return <RegularItem />;
+    }
+    return <CustomItem />;
+  }
+
   return (
     <div className="card productCard">
       <Link to={`/products/${_id}`}>
@@ -51,7 +65,7 @@ function ProductItem(item) {
       <div>
         <span>${price}</span>
       </div>
-      <button className="btn btn-lg" type="button" onClick={addToCart}>Add to cart</button>
+      <RenderButton />
     </div>
   );
 }
