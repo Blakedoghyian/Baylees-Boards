@@ -127,6 +127,9 @@ db.once('open', async () => {
       image: 'medium-fruits-veggies.jpg',
       price: 60
     },
+    {
+      name: 'Midnight Snack - Md',
+      category: categories[1]._id,
       description:
         'This board doesnt even need a description! All things sweet - The Midnight Snack is plated with Chocoalte, Mixed Berries, Apples, and salted pretzels. Oh, and more chocolate! (𝘚𝘦𝘳𝘷𝘦𝘴 8-12)',
       image: 'medium-dessert.jpg',
