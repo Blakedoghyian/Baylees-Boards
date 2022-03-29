@@ -235,6 +235,11 @@ textarea {
 }
 
 @media screen and (max-width: 500px) {
+
+    body {
+        padding-top: 50px;
+    }
+
     .contact {
         height: 100vh;
         padding: 20px;
