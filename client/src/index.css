@@ -1,6 +1,6 @@
 :root {
     --primary-color-Isabelline: #edede9;
-    --secondary-color-desert-sand: #d5bdaf;
+    --secondary-color-desert-sand: #d6beb0;
     --ternary-color-pale-silver: #d6ccc2;
     --color-linen: #f5ebe0;
     --color-champagne: #e3d5ca;
@@ -132,11 +132,10 @@ ul {
 }
 
 #home-text {
-    background-color: var(--secondary-color-desert-sand);
+    background-color: rgb(214, 190, 176, 0.8);
     text-align: center;
     padding: 50px;
     box-shadow: 0px 2px 8px 0px var(--ternary-color-pale-silver);
-    opacity: 0.8;
     color: black;
 }
 */
@@ -216,6 +215,89 @@ textarea {
 .contact-button:hover {
     background-color: var(--color-linen);
     color: black;
+}
+
+.home-button {
+    width: 200px;
+    border: none;
+    padding: 20px;
+    background-color: var(--primary-color-Isabelline);
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 20px 0px;
+    box-shadow: 0px 2px 8px 0px var(--ternary-color-pale-silver);
+    border-radius: 1rem;
+}
+
+.home-button:hover {
+    background-color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .contact {
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .contact-left {
+        padding: 25px;
+    }
+
+    .contact-title {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .contact-description {
+        font-size: 14px;
+    }
+
+    form {
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    input {
+        width: 80%;
+        height: 30px;
+        margin: 20px;
+        margin-left: 0px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .contact-buttons {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    
+    .contact-info-item a {
+        list-style: none;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    
+    .contact-photo {
+        width: 40px;
+    }
 }
 
 /* End Jessica's Classes*/
