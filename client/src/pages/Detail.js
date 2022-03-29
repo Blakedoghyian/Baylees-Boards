@@ -92,7 +92,7 @@ function Detail() {
     <>
       {currentProduct ? (
         <div id='home-text'>
-          <Link to="/">← Back to Boards</Link>
+          <Link className='back-button' to="/boards">← Back to Boards</Link>
 
           <h2>{currentProduct.name}</h2>
 

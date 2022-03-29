@@ -18,11 +18,6 @@ function OrderHistory() {
 
         {user ? (
           <>
-                <a href='/boards'>
-                  <button className='arrow'>
-                    <h1>⬅️</h1>
-                  </button>
-                </a>
             <h2>
               Order History for {user.firstName} {user.lastName}
             </h2>

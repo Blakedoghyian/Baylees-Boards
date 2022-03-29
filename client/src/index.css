@@ -7,7 +7,7 @@
 
 }
 body {
-    padding-top: 100px;
+    padding-top: 8vh;
     background-color: var(--primary-color-Isabelline);
 }
 
@@ -30,6 +30,7 @@ body {
 
 .nostyle {
     text-decoration: none;
+    margin-top: 1vh;
 } 
 
 ul {
@@ -63,6 +64,7 @@ ul {
 .navContainer {
     width: 100%;
     background-color: rgba(243, 210, 175, 0.5);
+    height: 8vh;
 }
 .sticky {
     position: fixed;
@@ -237,7 +239,7 @@ textarea {
 @media screen and (max-width: 500px) {
 
     body {
-        padding-top: 50px;
+        padding-top: 8vh;
     }
 
     .contact {
@@ -357,6 +359,16 @@ textarea {
     margin: .25rem 0 .75rem 2.2rem;
 
 }
+
+.back-button {
+    color: black;
+    margin-left: -60vw;
+}
+
+.back-button:hover {
+    text-decoration: underline;    color: var(--primary-color-Isabelline);
+}
+
 @media screen and (min-width:500px){
     .productsContainer{
         grid-template-columns: repeat(2,1fr);
@@ -366,6 +378,9 @@ textarea {
 @media screen and (min-width:760px){
     .productsContainer{
         grid-template-columns: repeat(3,1fr);
+    }
+    .back-button {
+        margin-left: -85vw;
     }
 }
 
