@@ -3,7 +3,6 @@ import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { useStoreContext } from "../utils/GlobalState";
 import { 
-  REMOVE_FROM_CART,
   UPDATE_CART_QUANTITY,
   ADD_TO_CART,
   UPDATE_PRODUCTS 
@@ -13,8 +12,6 @@ import { idbPromise } from "../utils/helpers";
 import { QUERY_PRODUCTS } from '../utils/queries';
 import spinner from '../assets/spinner.gif';
 import Cart from '../components/Cart';
-import Contact from './Contact';
-
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -50,16 +47,6 @@ function Detail() {
       idbPromise('cart', 'put', { ...currentProduct, purchaseQuantity: 1 });
     }
   }
-
-  const removeFromCart = () => {
-    dispatch({
-      type: REMOVE_FROM_CART,
-      _id: currentProduct._id
-    });
-  
-    // upon removal from cart, delete the item from IndexedDB using the `currentProduct._id` to locate what to remove
-    idbPromise('cart', 'delete', { ...currentProduct });
-  };
 
   useEffect(() => {
     // already in global store

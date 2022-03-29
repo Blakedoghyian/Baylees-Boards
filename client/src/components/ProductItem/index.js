@@ -45,6 +45,26 @@ function ProductItem(item) {
     return <Link to={'/contact'}><button className="btn btn-lg" type="button">Customize a Board</button></Link>
   }
 
+  function RegularLink(props) {
+    return <Link to={`/products/${_id}`}>
+    <img
+      alt={name}
+      src={`/images/${image}`}
+    />
+    <p>{name}</p>
+  </Link>
+  }
+
+  function CustomLink(props) {
+    return <Link to={`/contact`}>
+    <img
+      alt={name}
+      src={`/images/${image}`}
+    />
+    <p>{name}</p>
+  </Link>
+  }
+
   function RenderButton(props) {
     const hasPrice = item.price;
     if (hasPrice > 0) {
@@ -53,15 +73,17 @@ function ProductItem(item) {
     return <CustomItem />;
   }
 
+    function RenderLink(props) {
+    const hasPrice = item.price;
+    if (hasPrice > 0) {
+      return <RegularLink />;
+    }
+    return <CustomLink />;
+  }
+
   return (
     <div className="card productCard">
-      <Link to={`/products/${_id}`}>
-        <img
-          alt={name}
-          src={`/images/${image}`}
-        />
-        <p>{name}</p>
-      </Link>
+      <RenderLink />
       <div>
         <span>${price}</span>
       </div>
