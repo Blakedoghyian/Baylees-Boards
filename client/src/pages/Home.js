@@ -3,6 +3,7 @@ import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from '../components/Cart';
 import background from '../assets/home-page.gif';
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <div class="container text-center" id="home-text">
           <h1 class="mb-4">charcuterie (pronounced "shahr-ku-tuh-ree"):</h1>
           <h4 class="mb-4">the art of preparing and assembling cured meats and meat products.</h4>
+          <Link to={'/boards'}><button class="home-button" type="button">View All Boards</button></Link>
         </div>
       </div>
     </div>
