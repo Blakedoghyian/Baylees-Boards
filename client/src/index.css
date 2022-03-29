@@ -350,3 +350,20 @@ textarea {
     background-color: var(--color-linen);
     color: black;
 }
+
+.history-container {
+    box-shadow: 0px 2px 8px 0px var(--ternary-color-pale-silver);
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    background-color: var(--secondary-color-desert-sand);
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.arrow {
+    border: 0px outset;
+    height:50px;
+    width:50px;
+    cursor:pointer;
+}
