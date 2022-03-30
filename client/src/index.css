@@ -7,7 +7,7 @@
 
 }
 body {
-    padding-top: 8vh;
+    padding-top: 12vh;
     background-color: var(--primary-color-Isabelline);
 }
 
@@ -367,9 +367,16 @@ textarea {
     color: black;
     margin-left: -60vw;
 }
+.back-button-sign {
+    color: black;
+    text-decoration: none;
+}
 
 .back-button:hover {
     text-decoration: underline;    color: var(--primary-color-Isabelline);
+}
+.back-button-sign:hover {
+    text-decoration: underline; 
 }
 
 @media screen and (min-width:500px){

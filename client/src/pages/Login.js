@@ -60,7 +60,7 @@ function Login(props) {
         <div className="flex-row flex-end">
           <button class="contact-button" type="submit">submit</button>
         </div>
-        <Link to="/signup">← Go to Signup</Link>
+        <Link className='back-button-sign' to="/signup">← Go to Signup</Link>
       </form>
     </div>
   );
