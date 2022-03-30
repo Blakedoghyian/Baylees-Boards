@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-import bayleeslogo from "../../assets/bayleeslogo.png";
-
 
 function Navigation() {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -49,7 +47,7 @@ function Navigation() {
             </a>
           </li>
           )}
-            <button onClick={toggleNav} className="navbtn">MENU</button>
+            <button onClick={toggleNav} className="navbtn">menu</button>
         </ul>
         
       );
@@ -75,7 +73,7 @@ function Navigation() {
               </Link>
             </li>
           )}
-            <button onClick={toggleNav} className="navbtn">MENU</button>
+            <button onClick={toggleNav} className="navbtn">menu</button>
         </ul>
         
       );
@@ -84,7 +82,7 @@ function Navigation() {
 
   return (
     <header className="flex-row navContainer sticky">
-      <h1>
+      <h1 className="nostyle">
         <Link className="nostyle fonts" to="/">
           Baylee's Boards
         </Link>
