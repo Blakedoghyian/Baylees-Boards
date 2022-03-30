@@ -25,12 +25,15 @@ const Contact = () => {
     }
     const handleReset = () => {
         Array.from(document.querySelectorAll("input")).forEach(
-          input => (input.value = "")
+            input => (input.value = "")
         );
+        Array.from(document.querySelectorAll("textarea")).forEach(
+            textarea => (textarea.value = "")
+            );
         this.setState({
-          itemvalues: [{}]
+            itemvalues: [{}]
         });
-      };
+    };
 
     return (
         <div className="contact">

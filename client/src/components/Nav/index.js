@@ -47,7 +47,7 @@ function Navigation() {
             </a>
           </li>
           )}
-            <button onClick={toggleNav} className="navbtn">MENU</button>
+            <button onClick={toggleNav} className="navbtn">menu</button>
         </ul>
         
       );
@@ -73,7 +73,7 @@ function Navigation() {
               </Link>
             </li>
           )}
-            <button onClick={toggleNav} className="navbtn">MENU</button>
+            <button onClick={toggleNav} className="navbtn">menu</button>
         </ul>
         
       );
