@@ -20,8 +20,9 @@
 ## Links
  - Github Repo: https://github.com/Blakedoghyian/Baylees-Boards
  - Deployed Heroku App: www.BayleesBoards.com
+ 
  ## App Description
-An E-commerce site for purchasing made to order charcuterie boards.
+An interactive MERN SPA e-commerce site for purchasing made-to-order charcuterie boards.
 
 ## Technologies used
 - Create react app
