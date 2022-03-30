@@ -27,6 +27,9 @@ const Contact = () => {
         Array.from(document.querySelectorAll("input")).forEach(
           input => (input.value = "")
         );
+        Array.from(document.querySelectorAll("textarea")).forEach(
+            textarea => (textarea.value = "")
+          );
         this.setState({
           itemvalues: [{}]
         });
