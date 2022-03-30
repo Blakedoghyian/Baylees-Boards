@@ -74,7 +74,7 @@ function Signup(props) {
         <div className="flex-row flex-end">
           <button class="contact-button" type="submit">submit</button>
         </div>
-        <Link to="/login">← Go to Login</Link>
+        <Link className='back-button-sign' to="/login">← Go to Login</Link>
       </form>
     </div>
   );

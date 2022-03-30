@@ -21,7 +21,6 @@
  - Github Repo: https://github.com/Blakedoghyian/Baylees-Boards
  - Deployed Heroku App: www.BayleesBoards.com
  ## App Description
-
 An E-commerce site for purchasing made to order charcuterie boards.
 
 ## Technologies used
@@ -41,7 +40,7 @@ This project taught us how to create a responsive E-commerce storefront using St
 
 ## Installation
  - No install required for this one!
- - Navigate to the deployed application at https://www.BayleesBoards.com and enjoy!
+ - Navigate to the deployed application at http://www.BayleesBoards.com and enjoy!
 
 ## license
 MIT License

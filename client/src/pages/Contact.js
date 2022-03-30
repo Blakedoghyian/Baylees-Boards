@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -18,10 +18,19 @@ const Contact = () => {
         .then((result) => {
             console.log(result.text);
             setDone(true);
+            handleReset();
         }, (error) => {
             console.log(error.text);
         });
     }
+    const handleReset = () => {
+        Array.from(document.querySelectorAll("input")).forEach(
+          input => (input.value = "")
+        );
+        this.setState({
+          itemvalues: [{}]
+        });
+      };
 
     return (
         <div className="contact">
@@ -39,7 +48,7 @@ const Contact = () => {
                             <input type="text" placeholder="your email address" name="user_email" />
                             <textarea rows="5" placeholder="message" name="message"></textarea>
                             <button class="contact-button">submit</button>
-                            {done && " -- Thank you! --"}
+                            {done && " -- Thank you for your message, we will reach out asap! --"}
                         </form>
                     </div>
                 </div>
